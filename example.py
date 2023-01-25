@@ -53,7 +53,6 @@ recipes= [ 'Bake in the preheated oven, stirring every 20 minutes, until sugar m
 print("-------------Recipes similarity---------------")
 for token in recipes:
     token = nlp(token)
-    print(type(token))
     for token_ in recipes:
         token_ = nlp(token_)
         print(token.similarity(token_))
